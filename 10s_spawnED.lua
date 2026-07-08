@@ -1,0 +1,6 @@
+Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function()
+		task.wait(ECHO_DELAY)
+		spawnEcho(player)
+	end)
+end)
